@@ -21,7 +21,7 @@ map("n", "<leader>gt", ":Lspsaga goto_type_definition<CR>", { noremap = true, si
 map('n', '<leader>sf', ':Lspsaga finder<CR>', { noremap = true, silent = true, desc = "Lspsaga Finder" })
 
 -- Key mapping for Lspsaga hover_doc
-map('n', 'k', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true, desc = "Lspsaga Hover Doc" })
+map('n', 'K', ':Lspsaga hover_doc<CR>', { noremap = true, silent = true, desc = "Lspsaga Hover Doc" })
 
 -- Key mapping for Lspsaga outline
 map('n', '<leader>so', ':Lspsaga outline<CR>', { noremap = true, silent = true, desc = "Lspsaga Outline" })
