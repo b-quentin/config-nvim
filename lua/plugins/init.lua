@@ -32,6 +32,14 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   {
+    "nvim-tree/nvim-tree.lua",
+    opts = function()
+      local default = require "nvchad.configs.nvimtree"
+      local custom_conf = require "configs.nvim-tree"
+      return vim.tbl_deep_extend("force", default, custom_conf)
+    end,
+  },
+  {
     'nvimdev/lspsaga.nvim',
     event = 'LspAttach',
     config = function()
