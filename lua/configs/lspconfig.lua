@@ -24,7 +24,7 @@ lspconfig.tsserver.setup {
   capabilities = capabilities,
 }
 
--- sometime we need to install gopls with yay 
+-- we need to install gopls with yay 
 lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
