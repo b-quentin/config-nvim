@@ -98,5 +98,11 @@ return {
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
     }
+  },
+  {
+    'akinsho/git-conflict.nvim', 
+    event = "VeryLazy",
+    version = "2.0.0", 
+    config = true
   }
 }
