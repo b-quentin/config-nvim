@@ -10,6 +10,11 @@ M.ui = {
   nvdash = {
     load_on_startup = true,
   },
+
+  lsp = {
+    signature = true,
+    -- autres configurations LSP
+  }
 }
 
 return M
