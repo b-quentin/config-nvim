@@ -66,6 +66,7 @@ return {
         "html", 
         "css",
         "markdown",
+        "go",
         "terraform"
    		},
    	},
