@@ -41,3 +41,5 @@ lspconfig.gopls.setup {
     }
   }
 }
+
+lspconfig.terraformls.setup{}

@@ -3,7 +3,8 @@ local options = {
   ensure_installed = {
   "lua-language-server",
   'stylua',
-  "gopls"
+  "gopls",
+  "terraform-ls"
   }
 }
 
