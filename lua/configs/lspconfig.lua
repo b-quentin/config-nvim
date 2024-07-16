@@ -50,4 +50,10 @@ lspconfig.tsserver.setup {
   cmd = { "typescript-language-server", "--stdio" }
 }
 
+-- yay tailwindcss-language-server
+lspconfig.tailwindcss.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
 lspconfig.terraformls.setup{}
