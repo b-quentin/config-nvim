@@ -62,4 +62,7 @@ lspconfig.eslint.setup{
   filetypes = {"javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "html"},
 }
 
+-- yay svelte-language-server
+lspconfig.svelte.setup{}
+
 lspconfig.terraformls.setup{}
