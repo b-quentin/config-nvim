@@ -64,13 +64,16 @@ return {
    		ensure_installed = {
         "html",
         "vim",
-        "lua", 
+        "lua",
         "vimdoc",
-        "html", 
+        "html",
         "css",
-        "markdown",
         "go",
-        "terraform"
+        "terraform",
+        "tsx",
+        "typescript",
+        "javascript",
+        "svelte"
    		},
    	},
    },
