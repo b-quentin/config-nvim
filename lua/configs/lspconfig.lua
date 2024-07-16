@@ -65,4 +65,5 @@ lspconfig.eslint.setup{
 -- yay svelte-language-server
 lspconfig.svelte.setup{}
 
+-- yay terraform-ls-bin
 lspconfig.terraformls.setup{}
