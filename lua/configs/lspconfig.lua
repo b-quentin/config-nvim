@@ -56,4 +56,10 @@ lspconfig.tailwindcss.setup{
   capabilities = capabilities,
 }
 
+lspconfig.eslint.setup{
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "html"},
+}
+
 lspconfig.terraformls.setup{}
