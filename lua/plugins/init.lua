@@ -24,9 +24,12 @@ return {
   },
   {
     "nvimtools/none-ls.nvim",
-    ft = "go",
-    opts = function()
-      return require "configs.null-ls"
+    dependencies = {
+      "nvimtools/none-ls-extras.nvim",
+    },
+    event = "VeryLazy",
+    config = function()
+      require "configs.null-ls"
     end,
   },
   {
