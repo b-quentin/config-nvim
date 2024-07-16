@@ -42,4 +42,12 @@ lspconfig.gopls.setup {
   }
 }
 
+-- yay typescript-language-server
+-- TypeScript
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  cmd = { "typescript-language-server", "--stdio" }
+}
+
 lspconfig.terraformls.setup{}
