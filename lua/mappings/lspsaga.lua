@@ -32,3 +32,5 @@ map('n', '<leader>sr', ':Lspsaga rename<CR>', { noremap = true, silent = true, d
 -- Key mappings for Lspsaga diagnostic navigation
 map('n', ']d', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = true, desc = "Lspsaga Next Diagnostic" })
 map('n', '[d', ':Lspsaga diagnostic_jump_prev<CR>', { noremap = true, silent = true, desc = "Lspsaga Previous Diagnostic" })
+
+map('n', '<leader>sd', ":lua vim.diagnostic.open_float()<CR>",  { noremap = true, silent = true, desc = "Diagnostic Open Float Window" })
