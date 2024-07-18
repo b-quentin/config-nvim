@@ -34,3 +34,4 @@ map('n', ']d', ':Lspsaga diagnostic_jump_next<CR>', { noremap = true, silent = t
 map('n', '[d', ':Lspsaga diagnostic_jump_prev<CR>', { noremap = true, silent = true, desc = "Lspsaga Previous Diagnostic" })
 
 map('n', '<leader>sd', ":lua vim.diagnostic.open_float()<CR>",  { noremap = true, silent = true, desc = "Diagnostic Open Float Window" })
+map('n', '<leader>sbf', ":lua vim.lsp.buf.format()<CR>",  { noremap = true, silent = true, desc = "Formatting" })
