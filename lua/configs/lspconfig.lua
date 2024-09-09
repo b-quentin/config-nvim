@@ -1,4 +1,4 @@
--- EXAMPLE 
+-- EXAMPLE
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
@@ -24,12 +24,12 @@ lspconfig.tsserver.setup {
   capabilities = capabilities,
 }
 
--- we need to install gopls with yay 
+-- we need to install gopls with yay
 lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = {"/usr/bin/gopls"},
-  filetypes = {"go", "gomod", "gowork", "gotmpl"},
+  cmd = { "/usr/bin/gopls" },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
   root_dir = util.root_pattern("go.work", "go.mod", ".git"),
   settings = {
     gopls = {
@@ -51,19 +51,19 @@ lspconfig.tsserver.setup {
 }
 
 -- yay tailwindcss-language-server
-lspconfig.tailwindcss.setup{
+lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   capabilities = capabilities,
 }
 
-lspconfig.eslint.setup{
+lspconfig.eslint.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "html"},
+  filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte", "html" },
 }
 
 -- yay svelte-language-server
-lspconfig.svelte.setup{}
+lspconfig.svelte.setup {}
 
 -- yay terraform-ls-bin
-lspconfig.terraformls.setup{}
+lspconfig.terraformls.setup {}

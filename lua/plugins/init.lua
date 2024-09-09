@@ -47,21 +47,21 @@ return {
     'nvimdev/lspsaga.nvim',
     event = 'LspAttach',
     config = function()
-        require "configs.lspsaga"
+      require "configs.lspsaga"
     end,
   },
   {
     "David-Kunz/gen.nvim",
     event = "VeryLazy",
-    opts = function ()
+    opts = function()
       return require "configs.gen"
     end,
   },
-   {
-   	"nvim-treesitter/nvim-treesitter",
+  {
+    "nvim-treesitter/nvim-treesitter",
     event = "VeryLazy",
-   	opts = {
-   		ensure_installed = {
+    opts = {
+      ensure_installed = {
         "html",
         "vim",
         "lua",
@@ -73,10 +73,12 @@ return {
         "tsx",
         "typescript",
         "javascript",
-        "svelte"
-   		},
-   	},
-   },
+        "svelte",
+        "graphql",
+        "rust"
+      },
+    },
+  },
   {
     "nvim-telescope/telescope-ui-select.nvim"
   },
@@ -109,7 +111,7 @@ return {
     }
   },
   {
-   'akinsho/git-conflict.nvim',
+    'akinsho/git-conflict.nvim',
     event = "VeryLazy",
     version = "2.0.0",
     config = true
@@ -117,12 +119,12 @@ return {
   {
     'lewis6991/gitsigns.nvim',
     config = function()
-        require "configs.gitsigns"
+      require "configs.gitsigns"
     end,
   },
   {
     "epwalsh/obsidian.nvim",
-    version = "*",  -- recommended, use latest release instead of latest commit
+    version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
     ft = "markdown",
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
@@ -154,4 +156,3 @@ return {
     },
   }
 }
-
