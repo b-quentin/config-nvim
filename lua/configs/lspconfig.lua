@@ -42,6 +42,20 @@ lspconfig.gopls.setup {
   }
 }
 
+-- yay rust-analyzer
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "rust" },
+  root_dir = util.root_pattern("Cargo.toml"),
+  -- Server-specific settings. See `:help lspconfig-setup`
+  settings = {
+    ['rust-analyzer'] = {
+      allFeatures = true,
+    },
+  },
+}
+
 -- yay typescript-language-server
 -- TypeScript
 lspconfig.tsserver.setup {
