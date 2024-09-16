@@ -154,5 +154,9 @@ return {
 
       -- see below for full list of options 👇
     },
+    {
+      'Exafunction/codeium.vim',
+      event = 'BufEnter'
+    }
   }
 }
