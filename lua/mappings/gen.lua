@@ -10,3 +10,6 @@ vim.api.nvim_set_keymap(
   ':lua telescope_list_models()<CR>', -- command
   { noremap = true, silent = true } -- options (non-recursive, silent)
 )
+
+-- Naviguer entre les liens Markdown
+vim.api.nvim_set_keymap("n", "<leader>g]", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
