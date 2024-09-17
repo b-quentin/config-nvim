@@ -130,7 +130,6 @@ return {
     end,
   },
   {
-  {
     "MeanderingProgrammer/render-markdown.nvim",
     event = "VeryLazy",
     opts = {},
