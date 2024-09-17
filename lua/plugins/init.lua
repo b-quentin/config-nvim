@@ -141,6 +141,13 @@ return {
     end,
   },
   {
+    "3rd/image.nvim",
+    event = "VeryLazy",
+    config = function()
+      require "configs.image"
+    end,
+  },
+  {
     "Exafunction/codeium.vim",
     event = "BufEnter",
   },
