@@ -10,9 +10,9 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "gopls"
-      }
-    }
+        "gopls",
+      },
+    },
   },
   {
     "neovim/nvim-lspconfig",
@@ -44,8 +44,8 @@ return {
     end,
   },
   {
-    'nvimdev/lspsaga.nvim',
-    event = 'LspAttach',
+    "nvimdev/lspsaga.nvim",
+    event = "LspAttach",
     config = function()
       require "configs.lspsaga"
     end,
@@ -75,12 +75,12 @@ return {
         "javascript",
         "svelte",
         "graphql",
-        "rust"
+        "rust",
       },
     },
   },
   {
-    "nvim-telescope/telescope-ui-select.nvim"
+    "nvim-telescope/telescope-ui-select.nvim",
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -107,17 +107,17 @@ return {
     -- setting the keybinding for LazyGit with 'keys' is recommended in
     -- order to load the plugin when the command is run for the first time
     keys = {
-      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    }
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+    },
   },
   {
-    'akinsho/git-conflict.nvim',
+    "akinsho/git-conflict.nvim",
     event = "VeryLazy",
     version = "2.0.0",
-    config = true
+    config = true,
   },
   {
-    'lewis6991/gitsigns.nvim',
+    "lewis6991/gitsigns.nvim",
     config = function()
       require "configs.gitsigns"
     end,

@@ -37,9 +37,9 @@ lspconfig.gopls.setup {
       usePlaceholders = true,
       analyses = {
         unusedparams = true,
-      }
-    }
-  }
+      },
+    },
+  },
 }
 
 -- yay rust-analyzer
@@ -47,10 +47,10 @@ lspconfig.rust_analyzer.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "rust" },
-  root_dir = util.root_pattern("Cargo.toml"),
+  root_dir = util.root_pattern "Cargo.toml",
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-    ['rust-analyzer'] = {
+    ["rust-analyzer"] = {
       allFeatures = true,
     },
   },
@@ -61,7 +61,7 @@ lspconfig.rust_analyzer.setup {
 lspconfig.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" }
+  cmd = { "typescript-language-server", "--stdio" },
 }
 
 -- yay tailwindcss-language-server

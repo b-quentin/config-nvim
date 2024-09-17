@@ -1,8 +1,8 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 vim.g.mapleader = " "
-vim.opt.clipboard:append { 'unnamedplus' }
+vim.opt.clipboard:append { "unnamedplus" }
 -- do not yank on delete char
-vim.keymap.set('n', 'x', '"_x')
+vim.keymap.set("n", "x", '"_x')
 
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
