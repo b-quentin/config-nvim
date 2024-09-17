@@ -140,4 +140,8 @@ return {
       require "configs.render-markdown"
     end,
   },
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+  },
 }
