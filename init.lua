@@ -37,6 +37,9 @@ dofile(vim.g.base46_cache .. "statusline")
 
 require "nvchad.autocmds"
 
+-- for nerovim plugins
+vim.opt.conceallevel = 1
+
 vim.schedule(function()
   require "mappings"
 end)
