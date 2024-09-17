@@ -148,6 +148,16 @@ return {
     end,
   },
   {
+    "3rd/diagram.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "3rd/image.nvim",
+    },
+    config = function()
+      require "configs.diagram"
+    end,
+  },
+  {
     "Exafunction/codeium.vim",
     event = "BufEnter",
   },
