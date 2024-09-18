@@ -12,4 +12,4 @@ vim.api.nvim_set_keymap(
 )
 
 -- Naviguer entre les liens Markdown
-vim.api.nvim_set_keymap("n", "<leader>g]", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
