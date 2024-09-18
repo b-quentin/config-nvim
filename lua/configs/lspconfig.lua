@@ -108,3 +108,9 @@ lspconfig.emmet_ls.setup {
     },
   },
 }
+
+lspconfig.marksman.setup {
+  cmd = { "marksman", "server" },
+  filetypes = { "markdown" },
+  root_dir = lspconfig.util.root_pattern(".git", ".marksman.toml"),
+}
