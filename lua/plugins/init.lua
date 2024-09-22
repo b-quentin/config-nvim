@@ -83,6 +83,7 @@ return {
         "svelte",
         "graphql",
         "rust",
+        "dart",
       },
     },
   },
@@ -147,7 +148,7 @@ return {
   -- yay ueberzugpp
   {
     "3rd/image.nvim",
-    event = "VeryLazy",
+    event = "BufEnter",
     config = function()
       require "configs.image"
     end,
