@@ -2,6 +2,8 @@ require "nvchad.mappings"
 
 require "mappings.lspsaga"
 
+require "mappings.codeium"
+
 require "mappings.gen"
 
 require "mappings.git-conflict"
