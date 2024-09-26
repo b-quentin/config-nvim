@@ -140,6 +140,11 @@ return {
       require "configs.render-markdown"
     end,
   },
+  -- yay imagemagick
+  -- yay luarocks
+  -- yay lua51
+  -- sudo luarocks --lua-version=5.1 install magick
+  -- yay ueberzugpp
   {
     "3rd/image.nvim",
     event = "VeryLazy",
@@ -158,7 +163,7 @@ return {
     end,
   },
   {
-    "Exafunction/codeium.vim",
-    event = "BufEnter",
+    "exafunction/codeium.vim",
+    keys = { '<C-p>' },
   },
 }
