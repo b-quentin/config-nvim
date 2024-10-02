@@ -167,4 +167,11 @@ return {
     "exafunction/codeium.vim",
     keys = { '<C-p>' },
   },
+  {
+    "laytan/tailwind-sorter.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
+    build = "cd formatter && CI=true pnpm install && pnpm run build",
+    config = true,
+  },
 }
