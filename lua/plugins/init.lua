@@ -165,7 +165,7 @@ return {
   },
   {
     "exafunction/codeium.vim",
-    keys = { '<C-p>' },
+    keys = { '<C-m>' },
   },
   {
     "laytan/tailwind-sorter.nvim",
